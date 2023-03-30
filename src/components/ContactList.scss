@@ -1,0 +1,105 @@
+.contactList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  table{
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    thead{
+      th{
+        border: 1px solid #cccccc;
+        padding: 7px 20px;
+      }
+    }
+    tbody{
+      tr{
+        td{
+          border: 1px solid #cccccc;
+          padding: 7px 20px;
+          .deleteBtn{
+            padding: 5px 10px;
+            border: none;
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            transition: .2s ease-in;
+            &:hover{
+              background-color: #d30000;
+            }
+          }
+          .editBtn{
+            padding: 5px 15px;
+            border: none;
+            color: white;
+            background-color: dodgerblue;
+            border-radius: 5px;
+            transition: .2s ease-in;
+            &:hover{
+              background-color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapper {
+  background: rgba(196, 196, 196, 0.6);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.popupCard {
+  width: 400px;
+  padding: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  .popupWrapper {
+      h2 {
+        font-weight: 500;
+        font-size: 18px;
+        color: #101828;
+        font-family: Poppins;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        color: #667085;
+        font-family: Poppins;
+      }
+
+      .buttonWrapper {
+        display: flex;
+        gap: 10px;
+        .DeclineBtn {
+          padding: 10px 18px;
+          background: #FFFFFF;
+          border: 1px solid #D0D5DD;
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          border-radius: 8px;
+          &:hover {
+            border: 1px solid gray;
+          }
+        }
+        .ConfirmBtn {
+          padding: 10px 18px;
+          background: #D92D20;
+          border: 1px solid #D92D20;
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          border-radius: 8px;
+          color: white;
+          &:hover {
+            background: #b40000;
+          }
+        }
+      }
+  }
+}
